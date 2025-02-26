@@ -1,3 +1,35 @@
+"""
+Script made by Andrew Caunes.
+Example use:
+python script.py --arg1 0.4 | python python-output-highlighter.py
+
+Add the following to .bashrc to use it as a command:
+
+HIGHLIGHTER_PATH="$HOME/path/to/python_highlighter/python-output-highlighter.py"
+
+pyhl() {
+    # Check if the highlighter exists
+    if [ ! -f "$HIGHLIGHTER_PATH" ]; then
+        echo "Error: Highlighter not found at $HIGHLIGHTER_PATH"
+        echo "Please update HIGHLIGHTER_PATH in your .bashrc"
+        return 1
+    fi
+
+    # If no arguments are provided, show usage
+    if [ $# -eq 0 ]; then
+        echo "Usage: pyhl [-m module | script.py] [args...]"
+        echo "Runs Python with syntax highlighting"
+        return 0
+    fi
+
+    # Capture and store stderr in a temp file (to avoid mixing with highlighted stdout)
+    # local stderr_file=$(mktemp)
+    
+    python3 2>&1 "$@" | python3 "$HIGHLIGHTER_PATH"
+
+}
+
+"""
 #!/usr/bin/env python3
 import re
 import sys
