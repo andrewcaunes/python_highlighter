@@ -2,6 +2,19 @@
 
 A simple, customizable syntax highlighter for Python output in the terminal. This tool colorizes Python code and error messages to make them more readable and easier to debug.
 
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>Before</b></td>
+      <td align="center"><b>After</b></td>
+    </tr>
+    <tr>
+      <td><img src="images/before.png" alt="Before highlighting" width="800"/></td>
+      <td><img src="images/after.png" alt="After highlighting" width="800"/></td>
+    </tr>
+  </table>
+</div>
+
 ## Features
 
 - Syntax highlighting for Python code components:
@@ -19,22 +32,7 @@ A simple, customizable syntax highlighter for Python output in the terminal. Thi
   - Built-in functions and types
   - Common module references
 
-### Example: Before and After Highlighting
 
-See the difference syntax highlighting makes:
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center"><b>Before</b></td>
-      <td align="center"><b>After</b></td>
-    </tr>
-    <tr>
-      <td><img src="images/before.png" alt="Before highlighting" width="800"/></td>
-      <td><img src="images/after.png" alt="After highlighting" width="800"/></td>
-    </tr>
-  </table>
-</div>
 
 ## Installation
 
