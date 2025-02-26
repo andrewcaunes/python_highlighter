@@ -43,23 +43,21 @@ git clone https://github.com/andrewcaunes/python_highlighter
 cd python_highlighter
 ```
 
-2. Make the scripts executable:
+2. Run your code with the highlighter:
 
 ```bash
-chmod +x python_highlighter.py
+python3 script.py | python3 path/to/python_highlighter.py
 ```
 
-## Configuration
+3. (optional) Configure command for easier use :
 
-### Basic Configuration
-
-1. Open your `.bashrc` file:
+Open your `.bashrc` file:
 
 ```bash
 nano ~/.bashrc
 ```
 
-2. Add the following function (make sure to update the `HIGHLIGHTER_PATH` to the actual location):
+1. Add the following function (make sure to update the `HIGHLIGHTER_PATH` to the actual location):
 
 ```bash
 # Python with syntax highlighting
