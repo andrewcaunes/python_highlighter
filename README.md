@@ -46,7 +46,7 @@ cd python_highlighter
 2. Run your code with the highlighter:
 
 ```bash
-python3 script.py | python3 path/to/python_highlighter.py
+python3 script.py | python3 path/to/python_output_highlighter.py
 ```
 
 3. (optional) Configure command for easier use :
@@ -61,7 +61,7 @@ nano ~/.bashrc
 
 ```bash
 # Python with syntax highlighting
-HIGHLIGHTER_PATH="$HOME/path/to/python_highlighter/python_highlighter.py"
+HIGHLIGHTER_PATH="$HOME/path/to/python_highlighter/python_output_highlighter.py"
 
 pyhl() {
     # Check if the highlighter exists
@@ -109,7 +109,7 @@ pip install -r requirements.txt 2>&1 | python3 $HIGHLIGHTER_PATH
 
 ## Customization
 
-You can customize the colors by editing the color constants at the top of the `python_highlighter.py` file:
+You can customize the colors by editing the color constants at the top of the `python_output_highlighter.py` file:
 
 ```python
 # Example: Change the string color from BRIGHT_GREEN to BRIGHT_BLUE
